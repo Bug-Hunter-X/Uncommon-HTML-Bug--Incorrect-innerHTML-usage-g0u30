@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Incorrect use of innerHTML to insert an entire HTML element
+    document.getElementById("myDiv").innerHTML = "<h1>This is a heading</h1>";
+
+    //This will replace the p tag completely, which could be unexpected behavior.
+
+    // Correct way to insert an element would be to create a new element and append it.
+  </script>
+</body>
+</html>
