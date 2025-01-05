@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Create the new heading element
+    let newHeading = document.createElement("h1");
+    newHeading.textContent = "This is a heading";
+
+    // Append the heading to the div
+    document.getElementById("myDiv").appendChild(newHeading);
+  </script>
+</body>
+</html>
